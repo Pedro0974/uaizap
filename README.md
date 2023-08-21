@@ -43,6 +43,6 @@ Para acessar apenas click aqui =>
 
 ### Minhas Redes Sociais
 
-[Whastapp](https://github.com/Pedro0974)
-[Github](https://github.com/Pedro0974)
-[Linkedin](https://www.linkedin.com/in/pedro-lucas-lopes-de-oliveira-7a090223a/)
+* [Whastapp](https://github.com/Pedro0974)
+* [Github](https://github.com/Pedro0974)
+* [Linkedin](https://www.linkedin.com/in/pedro-lucas-lopes-de-oliveira-7a090223a/)
