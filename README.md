@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Projeto Uaizap - Trabalho 1: Desenvolvimento de Front-end em React (2023)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto visa a avaliação do primeiro trabalho da disciplina de Desenvolvimento Web Front-End, tendo como objetivo a recriação de funções e componentes em React para simular o funcionamento de um chat no WhatsApp.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+* **React**
+* **Tailwind CSS**
+* **npm**
+* **Surge**
 
-### `npm start`
+O **npm** será utilizado para gerenciar instalações e dependências do projeto. Para a criação de componentes e funções necessárias que imitam o WhatsApp, farei uso da biblioteca React por meio do `create-react-app`. Quanto à estilização, optei por utilizar o Tailwind CSS, uma biblioteca de estilos com a qual estou familiarizado. Após a conclusão do projeto, atendendo a um pedido do professor, realizarei o deploy por meio do Surge, uma plataforma gratuita de hospedagem para desenvolvedores testarem suas aplicações.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Plano de Desenvolvimento
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Estrutura do Projeto**
+  1. Criar o repositório no GitHub
+  2. Instalar as dependências do projeto
+  3. Separar arquivos de estilo e componentes
+     
+* **Prototipação**
+  1. Realizar a prototipação usando o Figma
+     
+* **Criação da Interface**
+  1. Desenvolver os componentes a serem utilizados
+  2. Adicionar funções básicas aos componentes
+     
+* **Implementar a Lógica das Mensagens**
+  1. Desenvolver as funções lógicas para envio e recebimento de mensagens
+  2. As mensagens do outro usuário serão geradas automaticamente, simulando uma conversa real
 
-### `npm test`
+### Link para a Aplicação Hospedada
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para acessar a aplicação, clique [aqui](https://github.com/Pedro0974).
 
-### `npm run build`
+### Minhas Redes Sociais
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [WhatsApp](https://github.com/Pedro0974)
+* [GitHub](https://github.com/Pedro0974)
+* [LinkedIn](https://www.linkedin.com/in/pedro-lucas-lopes-de-oliveira-7a090223a/)
