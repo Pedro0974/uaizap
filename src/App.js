@@ -5,16 +5,41 @@ import HeaderMessage from "./components/message/HeaderMessage";
 import MessageComponent from "./components/message/MessageComponent";
 import PromptMessage from "./components/message/PromptMessage";
 
+// import imagens
+import woman1 from './assets/images/woman-image1.png'
+import woman2 from './assets/images/woman-image2.png'
+import man from './assets/images/image-man.png'
+
 function App() {
+
+  // Array de objetos c que serao os contatos
+  const arrayContacts = [
+    {
+      name: "Isabela",
+      photo: woman1,
+      lastSeen: "Visto por ultimo 10 minutos atrás",
+      messagesSent: [],
+      receivedMessages: [],
+    },
+    {
+      name: "Carol",
+      photo: woman2,
+      lastSeen: "visto por ultimo 20 minutos atrás",
+      messagesSent: [],
+      receivedMessages: [],
+    },
+  ];
+
   return (
-    <div className="App">
+    <div className="App bg-bgMessage h-[100vh]">
 
       {/* Aqui vai ficar os componentes da lista de contatos */}
-      <div>
+      <div className="border-r-2 border-colorIcons/30 w-[40%]">
 
-        <HeaderListContacts />
+        {/* Cabeçalho para lista de contatos */}
+        <HeaderListContacts profileImage={man} />
 
-        <ListContact />
+        <ListContact contacts={arrayContacts} />
       
       </div>
 

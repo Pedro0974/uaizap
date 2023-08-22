@@ -1,12 +1,21 @@
+const ListContact = ({contacts}) => {
 
-
-const ListContact = () => {
-
-    return (
-        <>
+  return (
+    <>
+      <div className="bg-colorList w-full h-[88vh] ">
+        <ul>
+          {contacts.map((contact, index) => (
+            <li key={index} className="flex justify-start ml-6 gap-3 py-4 border-b border-colorIcons/30">
+              <img className='w-12 rounded-full' src={contact.photo} alt={contact.name} />
         
-        </>
-    )
-}
+              <h2 className="text-colorIcons text-xl">{contact.name}</h2>
 
-export default ListContact
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
+};
+
+export default ListContact;
