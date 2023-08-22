@@ -1,3 +1,4 @@
+import imageMan from '../assets/images/image-man.jpg'
 
 const HeaderListMessages = () => {
 
@@ -5,6 +6,8 @@ const HeaderListMessages = () => {
         <>
             <nav className="w-[30%] bg-slate-800 text-gray-300 flex justify-between items-center px-6 py-6">
                 <div>
+
+                    <img className="w-16 rounded-full" src={imageMan} alt="image-man"/>
 
                 </div>
 
