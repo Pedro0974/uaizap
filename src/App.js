@@ -31,10 +31,10 @@ function App() {
   ];
 
   return (
-    <div className="App bg-bgMessage h-[100vh]">
+    <div className="bg-bgMessage h-[100vh] flex w-full">
 
       {/* Aqui vai ficar os componentes da lista de contatos */}
-      <div className="border-r-2 border-colorIcons/30 w-[40%]">
+      <div className="border-r-2 border-colorIcons/30 w-[40%] h-full">
 
         {/* Cabeçalho para lista de contatos */}
         <HeaderListContacts profileImage={man} />
@@ -46,7 +46,7 @@ function App() {
 
 
       {/* Aqui vai ficar os componentes da converça */}
-      <div>
+      <div className="w-full flex flex-col justify-between">
 
         <HeaderMessage />
 

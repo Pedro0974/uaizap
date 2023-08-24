@@ -10,6 +10,7 @@ module.exports = {
         colorIcons: '#D9D9D9',
         colorList: '#111B21',
         bgMessage: '#0C151B',
+        colorInput: '#2A3942'
       },
     },
   },
