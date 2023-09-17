@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Seção @tailwind components; */
+@layer components {
+    .header-message {
+        @apply flex justify-between px-4 py-3 bg-colorHeader w-full items-center
+    }
+    .header-contact-name {
+        @apply flex flex-col 
+    }
+
+    .header-options {
+        @apply flex justify-between text-xl text-colorIcons text-xl
+    }
+    
+    .header-contacts {
+        @apply w-full bg-colorHeader text-colorIcons flex justify-between items-center px-6 py-3 absolute w-[28.5%]
+    }
+
+    .image-profile {
+        @apply w-12 rounded-full
+    }
+
+    .prompt-container {
+        @apply flex justify-between bg-colorHeader py-3 px-8 items-center
+    }
+
+    .input-prompt {
+        @apply bg-colorInput px-4 py-2 w-[70%] rounded text-colorIcons 
+    }
+
+    .message-container {
+        @apply  bg-colorInput flex flex-row w-52
+    }
+
+    .selectUser {
+        @apply bg-colorInput ml-3  w-36 text-center px-4 py-1 rounded
+    }
+
+  }
