@@ -1,22 +1,28 @@
+import React, { useState, useEffect } from "react";
 
+const Message = ({ message }) => {
+  const [isSentMessage, setIsSentMessage] = useState(false);
 
-const Message = () => {
+  useEffect(() => {
+    console.log(message);
+    if (message && message.contact === "My") {
+      setIsSentMessage(true);
+    } else {
+      setIsSentMessage(false);
+    }
+  }, [message]);
 
-    return (
-        <>
+  return (
+    <div className={`message-container ${isSentMessage ? "sent" : "received"}`}>
+      <div className="scope-message">
+        <h2 className="name-contact-message">{message.contact}</h2>
+        <p className="context-message">{message.context}</p>
+      </div>
+      <div className="time-message">
+        {message.time} <i className="fa-solid fa-check-double"></i>
+      </div>
+    </div>
+  );
+};
 
-        <div className="message-container">
-            <div>
-                <h2>Isabela</h2>
-                <p>Mensagem recebida</p>
-            </div>
-            <div>
-                17:00 <i className="fa-solid fa-check-double"></i>
-            </div>
-        </div>
-        
-        </>
-    )
-}
-
-export default Message
+export default Message;

@@ -29,10 +29,15 @@
     }
 
     .input-prompt {
-        @apply bg-colorInput px-4 py-2 w-[70%] rounded
+        @apply bg-colorInput px-4 py-2 w-[70%] rounded text-colorIcons 
     }
 
     .message-container {
-        @apply  bg-colorInput !w-auto
+        @apply  bg-colorInput flex flex-row w-52
     }
+
+    .selectUser {
+        @apply bg-colorInput ml-3  w-36 text-center px-4 py-1 rounded
+    }
+
   }

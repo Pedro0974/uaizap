@@ -1,15 +1,16 @@
-import foto from "../../assets/images/woman-image1.png";
+import React from 'react'
 
-const HeaderMessage = () => {
+const HeaderMessage = ({contact}) => {
   return (
     <>
       <header className="header-message">
         <div className="flex gap-3">
-          <img className="image-profile" src={foto} alt="imagem teste"></img>
+          
+          <img className="image-profile" src={contact.photo} alt="imagem teste"></img>
 
           <div className="header-contact-name">
-            <h2 className="text-xl text-colorIcons font-bold">Nome do contato</h2>
-            <h5 className="text-sm text-colorIcons">Historico de visualizações</h5>
+            <h2 className="text-xl text-colorIcons font-bold">{contact.name}</h2>
+            <h5 className="text-sm text-colorIcons">{contact.lastSeen}</h5>
           </div>
         </div>
 
