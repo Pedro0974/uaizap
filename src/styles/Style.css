@@ -5,6 +5,7 @@
 
 /* Seção @tailwind components; */
 @layer components {
+    
     .header-message {
         @apply flex justify-between px-4 py-3 bg-colorHeader w-full items-center
     }
