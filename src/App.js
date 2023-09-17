@@ -11,6 +11,7 @@ import conversations from "./data";
 import man from "./assets/images/image-man.png";
 
 function App() {
+  
   const [showMessage, setShowModal] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
   const [historyMessages, setHistoryMessages] = useState({});
