@@ -4,7 +4,6 @@ const Message = ({ message }) => {
   const [isSentMessage, setIsSentMessage] = useState(false);
 
   useEffect(() => {
-    
     console.log(message);
     if (message && message.contact === "My") {
       setIsSentMessage(true);

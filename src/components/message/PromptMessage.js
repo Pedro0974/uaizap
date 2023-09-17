@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const PromptMessage = ({ contact, onChildClick }) => {
-  
+
   const [message, setMessage] = useState({ contact: "", context: "", time: "" });
   const [selectedContact, setSelectedContact] = useState("");
 

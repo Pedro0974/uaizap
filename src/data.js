@@ -1,7 +1,6 @@
 import woman2 from './assets/images/woman-image2.png'
 import isabela from './assets/images/isabelita.png'
 
-
 const conversations = [
   {
     name: "Isabela",

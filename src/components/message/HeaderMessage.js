@@ -2,7 +2,6 @@ import React from 'react'
 
 const HeaderMessage = ({contact}) => {
   return (
-    
     <>
       <header className="header-message">
         <div className="flex gap-3">

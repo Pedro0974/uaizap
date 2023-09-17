@@ -2,7 +2,6 @@ import React from "react";
 
 const ListContact = ({ contacts, onChildClick }) => {
   return (
-    
     <>
       <div className="bg-colorList w-full h-full pt-16  ">
         <ul>
