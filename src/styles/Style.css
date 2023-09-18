@@ -9,6 +9,7 @@
     .header-message {
         @apply flex justify-between px-4 py-3 bg-colorHeader w-full items-center
     }
+
     .header-contact-name {
         @apply flex flex-col 
     }
@@ -33,12 +34,51 @@
         @apply bg-colorInput px-4 py-2 w-[70%] rounded text-colorIcons 
     }
 
+    .container-history-message {
+        @apply h-[85vh] w-full flex flex-col justify-end 
+    }
+
     .message-container {
-        @apply  bg-colorInput flex flex-row w-52
+        @apply flex flex-row 
+    }
+
+    .message {
+        @apply bg-colorInput mx-4 my-2 p-2 rounded-lg max-w-[40%]
+    }
+
+    .context-message {
+        @apply break-words
+    }
+
+    .scope-message {
+        @apply flex flex-col gap-1
+    }
+
+    .time-message {
+       @apply text-xs
+    }
+
+    .name-contact-message {
+        @apply text-blue-700 font-bold
+    }
+
+    .time-message {
+        @apply flex justify-end items-center mt-1
+    }
+
+    .sent {
+        @apply w-full justify-end items-center text-colorIcons
+    }
+    .received {
+        @apply text-colorIcons 
     }
 
     .selectUser {
-        @apply bg-colorInput ml-3  w-36 text-center px-4 py-1 rounded
+        @apply bg-colorInput ml-3  w-36 text-center px-4 py-1 rounded outline-0 select-none
+    }
+
+    .hint {
+        @apply fixed bg-colorInput
     }
 
   }

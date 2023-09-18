@@ -9,6 +9,12 @@ const PromptMessage = ({ contact, onChildClick }) => {
     setSelectedContact(e.target.value);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSendMessage();
+    }
+  };
+
   const handleSendMessage = () => {
     const dataAtual = new Date();
 
@@ -36,6 +42,7 @@ const PromptMessage = ({ contact, onChildClick }) => {
       <div className="prompt-container">
         <div className="header-options w-16 flex items-center gap-3">
           <select className="selectUser" value={selectedContact} onChange={handleContactChange}>
+            <option value="">Select User</option>
             <option value="My">My</option>
             <option value={contact.name}>{contact.name}</option>
           </select>
@@ -47,6 +54,7 @@ const PromptMessage = ({ contact, onChildClick }) => {
             type="text"
             placeholder="Message"
             onChange={(e) => setMessage({ ...message, context: e.target.value })}
+            onKeyDown={handleKeyDown}
           />
           <button className="header-options ml-4" onClick={handleSendMessage}>
             <i className="fa-solid fa-paper-plane"></i>

@@ -12,8 +12,11 @@ module.exports = {
         bgMessage: '#0C151B',
         colorInput: '#2A3942'
       },
+      
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 

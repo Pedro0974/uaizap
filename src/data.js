@@ -7,31 +7,19 @@ const conversations = [
     name: "Isabela",
     lastSeen: "",
     photo: isabela,
-    messagesSent: [{
-      contact: '',
-      context: '',
-      time: ''
-    }],
+    messagesSent: [],
   },
   {
     name: "Maycon",
     lastSeen: "",
     photo: woman2,
-    messagesSent: [{
-      contact: '',
-      context: '',
-      time: ''
-    }],
+    messagesSent: [],
   },
   {
     name: "Victor",
     lastSeen: "",
     photo: woman2,
-    messagesSent: [{
-      contact: '',
-      context: '',
-      time: ''
-    }],
+    messagesSent: [],
   },
   // Adicionar mais objetos de conversa conforme necessário
 ];
