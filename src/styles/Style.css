@@ -35,7 +35,11 @@
     }
 
     .container-history-message {
-        @apply h-[85vh] w-full flex flex-col justify-end 
+        @apply h-[85vh] w-full flex flex-col justify-start
+    }
+
+    .history-scroll {
+        @apply overflow-y-scroll h-[85vh] scrollbar scrollbar-thumb-colorIcons scrollbar-track-colorInput scrollbar-thin
     }
 
     .message-container {

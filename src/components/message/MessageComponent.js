@@ -50,7 +50,7 @@ const Message = ({ message }) => {
           <p className="context-message">{message.context}</p>
         </div>
         <div className="time-message">
-          {messageTime} <i className="fa-solid fa-check-double px-"></i>
+          {messageTime} <i className="fa-solid fa-check-double px-1 "></i>
         </div>
       </div>
       {isHintOpen && (
