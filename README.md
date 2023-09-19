@@ -27,7 +27,6 @@ O **npm** será utilizado para gerenciar instalações e dependências do projet
      
 * **Implementar a Lógica das Mensagens**
   1. Desenvolver as funções lógicas para envio e recebimento de mensagens
-  2. As mensagens do outro usuário serão geradas automaticamente, simulando uma conversa real
 
 ### Link para a Aplicação Hospedada
 
