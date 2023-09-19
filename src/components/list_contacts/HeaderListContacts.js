@@ -9,10 +9,8 @@ const HeaderListMessages = ({profileImage}) => {
                     <img className="image-profile" src={profileImage} alt=" Man to profile"/>
                 </div>
 
-                <div className=" header-options w-44">
+                <div className=" header-options w-14">
                     <i className="fas fa-users"></i>
-                    <i className="fas fa-search"></i>
-                    <i className="fas fa-message"></i>
                     <i className="fa-solid fa-ellipsis-vertical"></i>
                 </div>
             </nav>

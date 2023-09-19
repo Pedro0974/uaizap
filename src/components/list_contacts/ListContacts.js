@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ListContact = ({ contacts, onChildClick }) => {
+  const [selectedContact, setSelectedContact] = useState(null);
+
+  const handleContactClick = (contact) => {
+    setSelectedContact(contact);
+    onChildClick(contact);
+  };
+
   return (
-    
     <>
-      <div className="bg-colorList w-full h-full pt-16  ">
+      <div className="bg-colorList w-full h-full pt-16">
         <ul>
           {contacts.map((contact, index) => (
             <li
               key={index}
-              className="flex justify-start ml-6 gap-3 py-4 border-b border-colorIcons/30"
+              className={`flex justify-start px-6 gap-3 py-5 border-b border-colorIcons/30 ${
+                selectedContact === contact ? "bg-colorInput" : ""
+              }`}
             >
-              <button className="flex gap-3 w-full"  onClick={() => onChildClick(contact)}>
+              <button
+                className="flex gap-3 w-full"
+                onClick={() => handleContactClick(contact)}
+              >
                 <img
                   className="image-profile"
                   src={contact.photo}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Message = ({ message }) => {
+const Message = ({ message, onRemove }) => {
   const [isSentMessage, setIsSentMessage] = useState(false);
   const [messageTime, setMessageTime] = useState("");
   const [isHintOpen, setIsHintOpen] = useState(false);
@@ -23,20 +23,17 @@ const Message = ({ message }) => {
   }, [message]);
 
   const handleDoubleClick = () => {
-    // Quando a mensagem for clicada duas vezes, abra o hint
-    setIsHintOpen(true);
-  };
-
-  const handleEditClick = () => {
-    // Implemente a lógica para editar a mensagem aqui
-    // Você pode abrir um modal de edição, por exemplo
-    // Lembre-se de fechar o hint após a ação ser concluída
-    setIsHintOpen(false);
+    if(isSentMessage === true) {
+      setIsHintOpen(true);
+    } else {
+      window.alert('You can only delete your messages')
+    }
   };
 
   const handleDeleteClick = () => {
-    // Implemente a lógica para apagar a mensagem aqui
-    // Lembre-se de fechar o hint após a ação ser concluída
+    if (onRemove) {
+      onRemove(message);
+    }
     setIsHintOpen(false);
   };
 
@@ -45,18 +42,17 @@ const Message = ({ message }) => {
       className={`message-container ${isSentMessage ? "sent" : "received"}`}
       onDoubleClick={handleDoubleClick}
     >
-      <div className="message">
+      <div className={`message ${isSentMessage ? "sent-scope" : "received"}`}>
         <div className="scope-message">
-          <p className="context-message">{message.context}</p>
+          <p className={`context-message ${isSentMessage ? "pr-14" : "pl-14"}`}>{message.context}</p>
         </div>
-        <div className="time-message">
+        <div className={`time-message  ${isSentMessage ? "justify-end" : "justify-start"}`}>
           {messageTime} <i className="fa-solid fa-check-double px-1 "></i>
         </div>
       </div>
       {isHintOpen && (
-        <div className="hint">
-          <button onClick={handleEditClick}>Editar</button>
-          <button onClick={handleDeleteClick}>Apagar</button>
+        <div className="hint-sent">
+          <button onClick={handleDeleteClick}><i className="fa-solid fa-trash"></i></button>
         </div>
       )}
     </div>

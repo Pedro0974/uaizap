@@ -5,6 +5,17 @@
 
 /* Seção @tailwind components; */
 @layer components {
+    .scope-app {
+        @apply bg-bgMessage h-[100vh] flex w-full
+    }
+
+    .scope-list-contact {
+        @apply border-r-2 border-colorIcons/30 w-[40%] h-full
+    }
+
+    .scope-conversation {
+        @apply w-full flex flex-col justify-between
+    }
     
     .header-message {
         @apply flex justify-between px-4 py-3 bg-colorHeader w-full items-center
@@ -31,7 +42,7 @@
     }
 
     .input-prompt {
-        @apply bg-colorInput px-4 py-2 w-[70%] rounded text-colorIcons 
+        @apply bg-colorInput px-4 py-2 w-[70%] rounded text-colorIcons outline-0
     }
 
     .container-history-message {
@@ -43,7 +54,7 @@
     }
 
     .message-container {
-        @apply flex flex-row 
+        @apply flex flex-row cursor-pointer
     }
 
     .message {
@@ -51,7 +62,7 @@
     }
 
     .context-message {
-        @apply break-words
+        @apply break-words 
     }
 
     .scope-message {
@@ -67,12 +78,17 @@
     }
 
     .time-message {
-        @apply flex justify-end items-center mt-1
+        @apply flex items-center mt-1
     }
 
     .sent {
         @apply w-full justify-end items-center text-colorIcons
     }
+
+    .sent-scope {
+        @apply bg-colorMyMessage
+    }
+    
     .received {
         @apply text-colorIcons 
     }
@@ -81,8 +97,8 @@
         @apply bg-colorInput ml-3  w-36 text-center px-4 py-1 rounded outline-0 select-none
     }
 
-    .hint {
-        @apply fixed bg-colorInput
+    .hint-sent {
+        @apply bg-colorInput rounded p-2 mr-2
     }
 
   }

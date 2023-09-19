@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 import "./styles/Style.css";
 import HeaderListContacts from "./components/list_contacts/HeaderListContacts";
@@ -8,10 +10,9 @@ import HistoryMessage from "./components/message/HistoryMessage";
 import conversations from "./data";
 
 // import imagens
-import man from "./assets/images/image-man.png";
+import my from "./assets/images/my-image.png";
 
 function App() {
-  
   const [showMessage, setShowModal] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
   const [historyMessages, setHistoryMessages] = useState({});
@@ -42,14 +43,25 @@ function App() {
     console.log(updatedHistoryMessages);
     setHistoryMessages(updatedHistoryMessages);
   };
-  
+
+  const handleRemoveMessage = (messageToRemove) => {
+    const contactName = selectedContact.name;
+    const updatedHistoryMessages = {
+      ...historyMessages,
+      [`historyMessage${contactName}`]: historyMessages[
+        `historyMessage${contactName}`
+      ].filter((message) => message !== messageToRemove),
+    };
+    setHistoryMessages(updatedHistoryMessages);
+  };
 
   return (
-    <div className="bg-bgMessage h-[100vh] flex w-full">
+    <div className="scope-app">
       {/* Aqui vai ficar os componentes da lista de contatos */}
-      <div className="border-r-2 border-colorIcons/30 w-[40%] h-full">
+      <div className="scope-list-contact">
         {/* Cabeçalho para lista de contatos */}
-        <HeaderListContacts profileImage={man} />
+        
+        <HeaderListContacts profileImage={my} />
 
         <ListContact
           contacts={conversations}
@@ -58,12 +70,17 @@ function App() {
       </div>
 
       {/* Aqui vai ficar os componentes da conversa */}
-      <div className="w-full flex flex-col justify-between">
+      <div className="scope-conversation">
         {showMessage && (
           <>
             <HeaderMessage contact={selectedContact} />
- 
-            <HistoryMessage messages={historyMessages[`historyMessage${selectedContact.name}`]} />
+
+            <HistoryMessage
+              messages={
+                historyMessages[`historyMessage${selectedContact.name}`]
+              }
+              onRemoveMessage={handleRemoveMessage}
+            />
 
             <PromptMessage
               contact={selectedContact}

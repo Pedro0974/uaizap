@@ -30,10 +30,14 @@ const PromptMessage = ({ contact, onChildClick }) => {
     const dataFormatada = dataAtual.toLocaleString("pt-BR", opcoesDeFormato);
   
     const currentTime = dataFormatada;
-    const messageText = message.context.trim(); // Remova espaços em branco antes e depois do texto
+    const messageText = message.context.trim();
   
     if (messageText === "") {
       window.alert('Context field cannot be empty')
+      return;
+    }
+    if(selectedContact === "") {
+      window.alert('Contact field cannot be empty')
       return;
     }
   
@@ -41,7 +45,6 @@ const PromptMessage = ({ contact, onChildClick }) => {
   
     onChildClick({ contact: selectedContact, context: messageText, time: currentTime });
   
-    // Limpe o valor do input após o envio da mensagem
     setMessage({ ...message, context: "" });
   };
   
@@ -62,8 +65,8 @@ const PromptMessage = ({ contact, onChildClick }) => {
             className="input-prompt"
             type="text"
             placeholder="Message"
-            value={message.context} // Use o valor do estado message.context
-            onChange={(e) => setMessage({ ...message, context: e.target.value })} // Atualize o estado message.context
+            value={message.context} 
+            onChange={(e) => setMessage({ ...message, context: e.target.value })} 
             onKeyDown={handleKeyDown}
           />
           <button className="header-options ml-4" onClick={handleSendMessage}>

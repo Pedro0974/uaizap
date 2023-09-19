@@ -1,5 +1,8 @@
-import woman2 from './assets/images/woman-image2.png'
-import isabela from './assets/images/isabelita.png'
+import victor from './assets/images/victor-image.png'
+import isabela from './assets/images/isabela-image.png'
+import victorD from './assets/images/victorD-image.png'
+import carol from './assets/images/carol-image.png'
+import maycon from './assets/images/maycon-image.png'
 
 
 const conversations = [
@@ -12,16 +15,27 @@ const conversations = [
   {
     name: "Maycon",
     lastSeen: "",
-    photo: woman2,
+    photo: maycon,
     messagesSent: [],
   },
   {
     name: "Victor",
     lastSeen: "",
-    photo: woman2,
+    photo: victor,
     messagesSent: [],
   },
-  // Adicionar mais objetos de conversa conforme necessário
+  {
+    name: "Carol",
+    lastSeen: "",
+    photo: carol,
+    messagesSent: [],
+  },
+  {
+    name: "Victor",
+    lastSeen: "",
+    photo: victorD,
+    messagesSent: [],
+  },
 ];
 
 
