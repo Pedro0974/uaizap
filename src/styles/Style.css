@@ -69,16 +69,12 @@
         @apply flex flex-col gap-1
     }
 
-    .time-message {
-       @apply text-xs
-    }
-
     .name-contact-message {
         @apply text-blue-700 font-bold
     }
 
     .time-message {
-        @apply flex items-center mt-1
+        @apply flex items-center mt-1 text-xs
     }
 
     .sent {
