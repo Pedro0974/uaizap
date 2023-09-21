@@ -27,14 +27,13 @@ O **npm** será utilizado para gerenciar instalações e dependências do projet
      
 * **Implementar a Lógica das Mensagens**
   1. Desenvolver as funções lógicas para envio e recebimento de mensagens
-  2. As mensagens do outro usuário serão geradas automaticamente, simulando uma conversa real
 
 ### Link para a Aplicação Hospedada
 
-Para acessar a aplicação, clique [aqui](https://github.com/Pedro0974).
+Para acessar a aplicação, clique [aqui](https://uaizap-pedro.surge.sh).
 
 ### Minhas Redes Sociais
 
-* [WhatsApp](https://github.com/Pedro0974)
 * [GitHub](https://github.com/Pedro0974)
 * [LinkedIn](https://www.linkedin.com/in/pedro-lucas-lopes-de-oliveira-7a090223a/)
+* [Instagram](https://www.instagram.com/pedroo0974/)
